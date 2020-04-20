@@ -22,6 +22,8 @@ class Setup:
             exit()
         if not option.Gateway:
             print("[-] Gateway ip missing. Type --help for more information")
+        if not option.Interface:
+            print("[-] Interface is missing. Type --help for more information")
         return option
 
 
